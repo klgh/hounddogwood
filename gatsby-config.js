@@ -27,8 +27,20 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY,
+        concurrency: 5, // default, see using markdown and attachments for more information
+        tables: [
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: process.env.AIRTABLE_TABLE_NAME,
+            // tableView: `YOUR_TABLE_VIEW_NAME`, // optional
+            // can leave off queryName, mapping or tableLinks if not needed
+          },
+        ],
+      },
+    },
   ],
 }
