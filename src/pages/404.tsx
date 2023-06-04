@@ -1,6 +1,6 @@
-import * as React from "react"
-import type { PageProps } from "gatsby"
-import Layout from "@lekoarts/gatsby-theme-jodie/src/components/layout"
+import * as React from "react";
+import type { PageProps } from "gatsby";
+import Layout from "@lekoarts/gatsby-theme-jodie/src/components/layout";
 
 const NotFound = (_props: PageProps) => (
   <Layout>
@@ -9,6 +9,6 @@ const NotFound = (_props: PageProps) => (
       <p>Page not found.</p>
     </div>
   </Layout>
-)
+);
 
-export default NotFound
+export default NotFound;
