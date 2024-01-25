@@ -1,5 +1,5 @@
-import type { GatsbyConfig, PluginRef } from "gatsby"
-import "dotenv/config"
+import "dotenv/config";
+import type { GatsbyConfig, PluginRef } from "gatsby";
 
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
@@ -10,7 +10,7 @@ const config: GatsbyConfig = {
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/gatsby-config.mjs
     siteTitle: `hounddogwood`,
     siteTitleAlt: `Shaun Scruggs - HoundDogWood`,
-    siteHeadline: `Jodie - Gatsby Theme from @lekoarts`,
+    siteHeadline: `HoundDogWood`,
     siteUrl: `https://hounddogwood.com`,
     siteDescription: `Forging a path through the woods of life.`,
     siteImage: `/banner.jpg`,
@@ -25,7 +25,7 @@ const config: GatsbyConfig = {
       options: {
         navigation: [
           { name: `Projects`, slug: `/projects` },
-          { name: `Art`, slug: `/art` },
+          { name: `For Sale`, slug: `/shop` },
           { name: `About`, slug: `/about` },
         ],
       },
