@@ -18,7 +18,7 @@
     "start": "gatsby develop"
   },
   "dependencies": {
-    "@lekoarts/gatsby-theme-jodie": "^5.0.4",
+    "@lekoarts/gatsby-theme-jodie": "^5.1.6",
     "gatsby": "^5.9.0",
     "gatsby-plugin-manifest": "^5.9.0",
     "gatsby-plugin-sitemap": "^6.9.0",
